@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Chakra Petch", sans-serif;
+  text-decoration: none;
+}
+h2,
+h3,
+h4,
+p {
+  letter-spacing: 6px;
+  line-height: 50px;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header {
+  background-color: black;
+}
+.header__title {
+  text-align: center;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.header__title h1 {
+  font-size: 26px;
+  opacity: 0.9;
+  color: #fff;
+}
+
+.main__info {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.main__info-title {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.contacts {
+  display: flex;
+  gap: 30px;
+}
+
+.contacts img {
+  width: 40px;
+  height: 40px;
+  transition: 1s;
+}
+
+.contacts img:hover {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(190, 195, 195);
+  border-radius: 80%;
+}
+
+.main__info-photo {
+  width: 33%;
+  justify-self: center;
+  overflow: hidden;
+  border: 10px solid #fff;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+  animation: img-animate 5s infinite alternate;
+}
+.main__info-photo img {
+  width: 100%;
+  height: 100%;
+}
+@keyframes img-animate {
+  0% {
+    border-radius: 85% 15% 83% 17% / 11% 73% 27% 89%;
+  }
+  40% {
+    border-radius: 91% 9% 100% 0% / 8% 90% 10% 92%;
+  }
+  60% {
+    border-radius: 50% 50% 63% 37% / 51% 41% 59% 49%;
+  }
+  100% {
+    border-radius: 82% 18% 95% 5% / 32% 72% 28% 68%;
+  }
+}
+.main__info-edu {
+  display: flex;
+  justify-content: space-around;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.facts h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.fact__list {
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  font-weight: 500;
+  list-style-type: square;
+}
+.fact__list li {
+  margin: 0 15px;
+}
